@@ -11,15 +11,17 @@
 <link rel="stylesheet" type="text/css" href="./css/index/blueBody.css">
 <link rel="stylesheet" type="text/css" href="./css/sitewidefonts.css">
 <link rel="stylesheet" type="text/css" href="./assets/font-awesome/css/font-awesome.min.css">
+<script type="text/javascript" src="./assets/js/jqueryui/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./assets/js/jqueryui/jquery-ui.min.css">
 <body>
 
 <div class="container">
   <div class="row" style="min-height: 90px;">
     <div class="col-lg-8" style="min-height: 90px;">
     	<img src="./assets/images/index/LegalMatchLogo.png" style="padding-top: 17px;"> 
-    	<span style="font-family: GothamMed;font-weight: bold;color: #001E59;font-size: 11px;position: absolute;bottom: 26px;padding-left: 5px;">FIND THE RIGHT LAWYER NOW</span>
+    	<span style="font-family: GothamMed;font-weight: bold;color: #001E59;font-size: 15px;position: absolute;bottom: 26px;padding-left: 5px;">FIND THE RIGHT LAWYER NOW</span>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4" style="font-family: GothamBold;font-weight: bold;">
     	<div style="padding-top:17px;font-weight: bold;">
 	    	<span><i class="fa fa-check" aria-hidden="true" style="color: green"></i>&nbsp;No fee to present your case</span><br>
 	    	<span><i class="fa fa-check" aria-hidden="true" style="color: green"></i>&nbsp;Choose from lawyers in your area</span><br>
@@ -27,28 +29,81 @@
 	    </div>
     </div>
   </div>
-  <div class="row bluegradient" style="min-height: 660px;">
-    <div class="row">
-    	Find a Lawyer for your Legal Issue<br>
-    	Fast, Free and Confidential
+  <div class="row bluegradient" style="min-height: 435px;">
+    <div class="col-lg-12" style="margin-top: 20px;margin-left: 30px;">
+    	<span style="font-family: Gotham;color:white;font-size: 37px;padding-top: 10px;">Find a Lawyer for your Legal Issue</span><br>
+    	<span style="font-family: GothamMed;color:white;font-size: 26px;">Fast, Free and Confidential</span>
     </div>
-    <div class="row">
-    	<div class="row">
-		    <div class="col">
-		    	<div class="row">
-		      		Enter Zip Code:
-		      	</div>
-		      	<div class="row">
-		      		Choose a category:
-		      	</div>
-		      	<div class="row">
-		      		Can't find your category? Click here.
-		      	</div>
-		    </div>
-		    <div class="col">
-		    	Clients review LegalMatch lawyers
-		    </div>
-		  </div>
+    <div class="col-lg-12">
+    	<div class="col-lg-6">
+		    <div class="col-lg-12" style="margin-top: 10px;">
+	      		<span style="
+				    color: white;
+				    font-family: GothamMed;
+				    padding-left: 0px;
+				">Enter Zip Code:</span>
+	      		<div class="row" style="
+				    padding-left: 10px;
+				">
+	      			<input type="text" class="roundedInput" id="whereILive" placeholder="Does not have to be where you live" style="
+					    height: 50px;
+					    width: 95%;
+					    padding-left: 51px;
+					    padding-right: 10px;
+					    font-size: 13px;
+					    font-family: Gotham;
+					">
+					<div>
+						<i class="fa fa-circle" aria-hidden="true" style="color:orange;font-size: 31px;position: absolute;left: 18px;top: 31px;"></i>
+						<span style="
+						    color: white;
+						    position: absolute;
+						    left: 27px;
+						    top: 35px;
+						">1</span>
+					</div>
+	      		</div>
+	      	</div>
+	      	<div class="col-lg-12" style="margin-top: 10px;">
+	      		<span style="color: white;font-family: GothamMed;padding-left: 0px;">Choose a category:</span>
+	      		<div class="row" style="padding-left: 10px;">
+					<div id="custSelect" style="background: white;font-size: 13px;font-family: Gotham;">
+					  <ul>
+					    <li><span style="color:black;" id="cat_selected"><span style="font-size: 13px; font-family: Gotham; color:gray;position: absolute; left: -3px;">Click to choose a category</span></span>
+					      <ul style="top:59px;">
+					        <li><span onclick="setVal(this)">Family</span></li>
+		      				<li><span onclick="setVal(this)">Criminal Defense</span></li>
+		      				<li><span onclick="setVal(this)">Business</span></li>
+		      				<li><span onclick="setVal(this)">Personal Injury</span></li>
+		      				<li><span onclick="setVal(this)">Bankruptcy &amp; Finances</span></li>
+					      </ul> 
+					     </li>
+					  </ul>
+					</div>
+	      			<!-- <select class="roundedSelect">
+	      				<option>Family</option>
+	      				<option>Criminal Defense</option>
+	      				<option>Business</option>
+	      				<option>Personal Injury</option>
+	      				<option>Bankruptcy &amp; Finances</option>
+	      			</select> -->
+					<div><i class="fa fa-circle" aria-hidden="true" style="color:orange;font-size: 31px;position: absolute;left: 18px;top: 31px;"></i>
+						<span style="
+						    color: white;
+						    position: absolute;
+						    left: 27px;
+						    top: 35px;
+						">2</span>
+					</div>
+	      		</div>
+	      	</div>
+	      	<div class="col-lg-12" style="color: white;font-family: Gotham;margin-top: 15px;margin-left: 55px;">
+	      		<span>Can't find your category? <span>Click here.</span></span>
+	      	</div>
+		</div>
+		<div class="col-lg-6" style="color:white;">
+	    	<span>Clients review LegalMatch lawyers
+	    </div>
     </div>
   </div>
   <div class="row">
@@ -64,5 +119,75 @@
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="modalAfterCategory" tabindex="-1" role="dialog" aria-labelledby="modalAfterCategoryLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modalAfterCategoryLabel"></h4>
+      </div>
+      <div class="modal-body" style="height: 158px;">
+        <div>
+        	<div>
+				<i class="fa fa-circle" aria-hidden="true" style="color:orange;font-size: 31px;position: absolute;left: 18px;top: 11px;"></i>
+				<span style="
+				    color: white;
+				    position: absolute;
+				    left: 27px;
+				    top: 16px;
+				">3</span>
+			</div>
+			<span style="padding-left: 36px;">Which <strong><span id="question_name">Family Law</span></strong> issue(s) apply to your case?</span>
+			<div class="col-lg-12">
+				<div class="col-lg-6">
+					<input type="checkbox" name="adoptions" id="adoptions" value="1">
+					<label for="adoptions">Adoptions</label><br>
+					<input type="checkbox" name="Guardianship" id="Guardianship" value="1">
+					<label for="Guardianship">Guardianship</label><br>
+					<input type="checkbox" name="childvis" id="childvis" value="1">
+					<label for="childvis">Child Custody and Visitation</label><br>
+					<input type="checkbox" name="pat" id="pat" value="1">
+					<label for="pat">Paternity</label><br>
+				</div>
+				<div class="col-lg-6">
+					<input type="checkbox" name="chsup" id="chsup" value="1">
+					<label for="chsup">Child Support</label><br>
+					<input type="checkbox" name="Separations" id="Separations" value="1">
+					<label for="Separations">Separations</label><br>
+					<input type="checkbox" name="Divorce" id="Divorce" value="1">
+					<label for="Divorce">Divorce</label><br>
+					<input type="checkbox" name="sposup" id="sposup" value="1">
+					<label for="sposup">Spousal Support or Alimony</label><br>
+				</div>
+			</div>
+        </div>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn btn-primary" style="border-radius: 50px;    font-size: 17px;padding: 19px;">FIND A LAWYER NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+	$( function() {
+		var availablePlaces = [
+		  "Nowhereville 00000",
+		  "Somewhereville 11111"
+		];
+		$( "#whereILive" ).autocomplete({
+		  source: availablePlaces
+		});
+	} );
+	function setVal(elem)
+	{
+		/*console.log(elem);*/
+		$("#cat_selected").html(elem.innerHTML);
+		$("#question_name").html(elem.innerHTML);
+		$("#modalAfterCategory").modal("show");
+	}
+</script>
 </body>
 </html>
